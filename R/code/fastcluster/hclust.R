@@ -1,4 +1,7 @@
-#https://cran.r-project.org/web/packages/fastcluster/fastcluster.pdf
+# Taken and modified from stats::hclust
+#
+# hclust(...) # new method
+# stats::hclust(...) # old method
 require(fastcluster)
 require(graphics)
 hc <- hclust(dist(USArrests), "ave")

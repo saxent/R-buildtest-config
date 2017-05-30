@@ -2,6 +2,7 @@
 ## Perform centroid clustering with squared Euclidean distances,
 ## cut the tree into ten clusters and reconstruct the upper part of the
 ## tree from the cluster centers.
+library(fastcluster)
 hc <- hclust.vector(USArrests, "cen")
 # squared Euclidean distances
 hc$height <- hc$height^2
@@ -17,3 +18,4 @@ opar <- par(mfrow = c(1, 2))
 plot(hc, labels = FALSE, hang = -1, main = "Original Tree")
 plot(hc1, labels = FALSE, hang = -1, main = "Re-start from 10 clusters")
 par(opar)
+
