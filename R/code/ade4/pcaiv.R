@@ -1,6 +1,0 @@
-library(ade4)
-data(rhone)
-pca1 <- dudi.pca(rhone$tab, scan = FALSE, nf = 3)
-iv1 <- pcaiv(pca1, rhone$disch, scan = FALSE)
-summary(iv1)
-plot(iv1)

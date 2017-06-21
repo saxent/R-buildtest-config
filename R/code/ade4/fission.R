@@ -1,5 +1,0 @@
-library(ade4)
-data(fission)
-fis.phy <- newick2phylog(fission$tre)
-table.phylog(fission$tab[names(fis.phy$leaves),], fis.phy, csi = 2)
-gearymoran(fis.phy$Amat, fission$tab)

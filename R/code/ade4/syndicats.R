@@ -1,6 +1,0 @@
-library(ade4)
-data(syndicats)
-par(mfrow = c(1,2))
-dudi1 <- dudi.coa(syndicats, scan = FALSE)
-score (dudi1, 1, TRUE)
-score (dudi1, 1, FALSE)
